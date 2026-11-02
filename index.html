@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>よるびと ポートフォリオ</title>
+<meta name="description" content="美大生よるびとの作品集です。油彩を中心に素描や立体も載せています。">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#12286f">
+<link rel="icon" href="img/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/logo-color.webp">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="is-dark">
+
+<nav class="nav" aria-label="ページ内の移動">
+  <a href="#works">さくひん</a>
+  <a href="#me">じぶん</a>
+  <a href="#contact">れんらく</a>
+</nav>
+
+<main>
+  <section class="hero" id="top">
+    <div class="hero__view">
+      <div class="hero__dark" aria-hidden="true"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+      <img class="hero__moon" src="img/moon.webp" alt="" width="800" height="800">
+
+      <div class="hero__floats" id="floats" aria-hidden="true"></div>
+
+      <div class="hero__center">
+        <h1 class="logo">
+          <img class="logo__color" src="img/logo-color.webp" alt="はじめまして ポートフォリオ" width="1448" height="1086">
+          <img class="logo__line" src="img/logo-line.webp" alt="" width="1448" height="1086">
+        </h1>
+        <p class="hero__name"><span>よるびと</span><small>絵を描いています</small></p>
+      </div>
+
+      <img class="hero__finale" id="finale" alt="" aria-hidden="true">
+      <p class="hero__cue" aria-hidden="true">さくひんを みる</p>
+    </div>
+  </section>
+
+  <section id="works" aria-label="作品">
+    <div id="chapters"></div>
+  </section>
+
+  <section class="me" id="me">
+    <h2 class="head">じぶんのこと</h2>
+    <div class="me__body">
+      <p class="me__lead">よるびとです<br>美大で絵を描いています</p>
+      <p>油彩を中心に<br>素描や立体やデジタルも<br>なんでもつくります</p>
+    </div>
+    <div class="other">
+      <h3>ほかにつくったもの</h3>
+      <a href="https://dk4ldbc0vohw2.cloudfront.net/" target="_blank" rel="noopener">
+        <b>Latte Art Breaker</b>
+        <span>ラテアートをこわして遊ぶ Web ゲーム</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="head">れんらく</h2>
+    <p>お仕事のご依頼やご相談はこちらからどうぞ</p>
+    <div class="contact__links" id="contactLinks"></div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>&copy; よるびと</p>
+  <p>作品の無断転載はご遠慮ください</p>
+</footer>
+
+<dialog class="lb" id="lb" aria-label="作品を大きく見る">
+  <div class="lb__stage" id="lbStage"><img id="lbImg" alt=""></div>
+  <p class="lb__cap" id="lbCap"></p>
+  <button class="lb__btn lb__close" id="lbClose" type="button" aria-label="閉じる">×</button>
+  <button class="lb__btn lb__prev" id="lbPrev" type="button" aria-label="前の作品">←</button>
+  <button class="lb__btn lb__next" id="lbNext" type="button" aria-label="次の作品">→</button>
+</dialog>
+
+<svg class="boil" aria-hidden="true" width="0" height="0">
+  <filter id="boil">
+    <feTurbulence id="boilNoise" type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="1"/>
+    <feDisplacementMap in="SourceGraphic" scale="5"/>
+  </filter>
+</svg>
+
+<noscript><p class="noscript">作品の表示には JavaScript が必要です</p></noscript>
+
+<script src="sizes.js"></script>
+<script src="works.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
