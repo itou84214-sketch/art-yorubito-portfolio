@@ -1,5 +1,7 @@
 # よるびと ポートフォリオ
 
+![よるびと ポートフォリオのトップ画面](docs/cover.png)
+
 美大生よるびとの作品集サイトです。  
 https://dcebidtk8d28l.cloudfront.net/
 
